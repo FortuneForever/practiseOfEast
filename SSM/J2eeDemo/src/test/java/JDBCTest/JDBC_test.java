@@ -20,10 +20,10 @@ public class JDBC_test {
         //载入utf-8
         Class.forName("com.mysql.cj.jdbc.Driver");
         //url
-        String url = "jdbc:mysql://localhost:3306/mybatis?useUnicode=true" +
+        String url = "jdbc:mysql://localhost:3306/mybase?useUnicode=true" +
                 "&characterEncoding=utf-8";
         String user = "root";
-        String pwd = "lihouhua";
+        String pwd = "123123";
         //建立链接
         connection =DriverManager.getConnection(url,user,pwd);
 //        System.out.println(connection);
@@ -33,7 +33,7 @@ public class JDBC_test {
     @Test
     public void test_insert(){
 //        insert操作
-        String insert = "insert into user value (4,'liujunjie','liujunjie')";
+        String insert = "insert into user value (4,'刘俊杰','123456')";
 
         try {
             statement.executeUpdate(insert);
@@ -47,9 +47,10 @@ public class JDBC_test {
         String sql = "update user set name = ? , pwd= ? where id = ?";
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(sql);
-            preparedStatement.setObject(1, "junjieliu");
-            preparedStatement.setObject(2, "junjieliu");
+            preparedStatement.setObject(1, "刘俊杰");
+            preparedStatement.setObject(2, "123123");
             preparedStatement.setObject(3, "4");
+            preparedStatement.executeUpdate();
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
