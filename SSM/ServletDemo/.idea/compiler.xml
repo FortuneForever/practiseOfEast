@@ -9,8 +9,13 @@
         <module name="ServletDemo" />
       </profile>
     </annotationProcessing>
+<<<<<<< HEAD
     <bytecodeTargetLevel>
       <module name="ServletDemo" target="1.5" />
+=======
+    <bytecodeTargetLevel target="8">
+      <module name="ServletDemo" target="1.8" />
+>>>>>>> d7be0751d73ed0f6a14bc1dbf615615c7851af51
     </bytecodeTargetLevel>
   </component>
 </project>

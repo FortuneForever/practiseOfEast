@@ -9,7 +9,7 @@
         <module name="J2eeDemo" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="8">
       <module name="J2eeDemo" target="1.5" />
     </bytecodeTargetLevel>
   </component>

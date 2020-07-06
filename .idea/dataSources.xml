@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="mybatis@localhost" uuid="85729ced-9130-4e32-858b-f9f2773658cc">
+    <data-source source="LOCAL" name="jdbc:mysql://192.168.0.137 :3306/gE03ED9_db" uuid="441530a2-3b1c-4b18-8024-a1d6cd9bceae">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+<<<<<<< HEAD
       <jdbc-url>jdbc:mysql://localhost:3306/mybatis</jdbc-url>
       <driver-properties>
         <property name="serverTimezone" value="UTC" />
       </driver-properties>
+=======
+      <jdbc-url>jdbc:mysql://192.168.0.137 :3306/gE03ED9_db</jdbc-url>
+>>>>>>> d7be0751d73ed0f6a14bc1dbf615615c7851af51
     </data-source>
   </component>
 </project>
